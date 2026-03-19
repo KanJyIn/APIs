@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Sarabun', 'Roboto-Condensed', 'San-Serif';
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 300px) and (max-width: 2000px) {
+    nav {
+        padding: 8px 20px;
+        background-color: rgb(29, 29, 29);
+        color: white;
+        display: flex;
+        /*เพื่อให้แยกส่วนกับ view Cart ได้ */
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+    }
+
+    #cartSummary {
+        position: absolute;
+        background-color: white;
+        color: black;
+        border-radius: 4px;
+        border: 1px solid rgb(29, 29, 29);
+        padding: 15px;
+        /*กำหนดระยะกรอบ */
+        top: 85px;
+        right: 20px;
+
+        table {
+            th {
+                font-weight: 600;
+            }
+
+            th,
+            td {
+                min-width: 110px;
+                text-align: center;
+            }
+        }
+    }
+
+    #productList {
+        max-width: 1240px;
+        /* กำหนดความคมชัดและ element ให้ใหญ่ที่สุดแค่ 1240px */
+        margin: 5em auto;
+        /*กำหนดระยะห่างจากขอบ */
+        gap: 2em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        margin-top: 5em;
+        padding: 0 2em;
+
+    }
+
+    .productThumbnail {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .productBottomSheet {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .productName {
+        display: block;
+        margin-top: 1em;
+    }
+
+}
+    #viewCart {
+        background-color: white;
+        color: black;
+        padding: 1em 1em;
+        border: none;
+        border-radius: 4px;
+        border-color: white;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .plusBtn, .minusBtn {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        position: relative;
+        
+    }
+
+    .addtoCart {
+        background-color: black;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }

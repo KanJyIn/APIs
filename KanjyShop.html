@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanJy Store</title>
+    <link rel="stylesheet" href="KanJyShop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1>Kanjy Store</h1>
+        </div>
+        <div>
+            <button id="viewCart">View Cart</button>
+            <div id="cartSummary">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartSummary_items">
+                        <tr>
+                            <th>
+                                <th>
+                                </th>
+                            </th>
+                            <th>
+                                <div class="qualityControl"></div>
+                                <button class="plusBtn">+</button>
+                                <span class="qualityDisplay"></span>
+                                <button class="minusBtn">-</button>
+                            </th>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th colspan="2">Total</th>
+                        <td id="cartSummary_total">0</td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="productList">
+
+        </section>
+    </main>
+    <script src="KanJyShop.js"> </script>
+</body>
+</html>
